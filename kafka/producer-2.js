@@ -8,6 +8,8 @@ var Kafka = require('node-rdkafka');
 var producer = new Kafka.Producer({
   //'debug' : 'all',
   'metadata.broker.list': 'localhost:9092',
+  'security.protocol': 'plaintext', // default value
+  'sasl.mechanisms': 'GSSAPI', // default value
   'dr_cb': true  //delivery report callback
 });
 

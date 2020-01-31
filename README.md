@@ -25,6 +25,6 @@ node kafka/consumer.js
 
 ## Useful links:
 
-* [Kafka-Client](https://kafka.apache.org/)
+* [Apache Kafka](https://kafka.apache.org/)
 * [A Practical Introduction to Kafka Storage Internals](https://medium.com/@durgaswaroop/a-practical-introduction-to-kafka-storage-internals-d5b544f6925f)
 * [Use Azure Event Hubs from Apache Kafka applications](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview)
