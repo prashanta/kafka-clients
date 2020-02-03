@@ -25,6 +25,8 @@ var producer = new Kafka.Producer({
   'dr_cb': true  //delivery report callback
 });
 
+// producer.setPollInterval(1000);
+
 var kafkaTopic = process.env.KAFKA_TOPIC;
 
 //logging debug messages, if debug is enabled
@@ -64,7 +66,7 @@ producer.on('ready', function(arg) {
     catch(err) {
       console.error(err);
       // Asking producer to poll will cause the last message to be sent 
-      // producer.poll(); // this is blocking so won't go to next iteration until polling is done.
+      producer.poll(); // this is blocking so won't go to next iteration until polling is done.
     }
   }
 
